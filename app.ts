@@ -1,4 +1,5 @@
 import { CompanyAccount } from './class/CompanyAccount'
+import { PartnerAccount } from './class/PartnerAccount'
 import { PeopleAccount } from './class/PeopleAccount'
 
 
@@ -26,3 +27,8 @@ console.log(companyAccount.balance)
 companyAccount.setStatus(false)
 companyAccount.getLoan(2500)
 console.log(companyAccount.balance) // It will keep being 2500, because with status false it won't be able to get the loan
+
+//Challenge 3
+const partnerAccount = new PartnerAccount('Parceiro da DIO', 3)
+partnerAccount.deposit(250)
+console.log(partnerAccount.balance) // It will be 260, because parterns recieve a bonus of 10 when deposit
