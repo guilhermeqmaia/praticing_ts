@@ -7,6 +7,7 @@ export class PartnerAccount extends DioAccount {
     }
 
     deposit = (amount: number): void => {
-        this.balance = amount + 10
+        const balance = this.getBalance()
+        this.setBalance(balance + amount + 10)
     }
 }

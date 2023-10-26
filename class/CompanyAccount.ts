@@ -9,7 +9,7 @@ export class CompanyAccount extends DioAccount {
   getLoan = (amount: number): void => {
     try {
       this.validateStatus()
-      this.balance += amount
+      this.deposit(amount)
     } catch (error) {
       console.log('Não é possível realizar um empréstimo com uma conta inválida')
     }
