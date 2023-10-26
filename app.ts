@@ -32,3 +32,32 @@ console.log(companyAccount.getBalance()) // It will keep being 2500, because wit
 const partnerAccount = new PartnerAccount('Parceiro da DIO', 3)
 partnerAccount.deposit(250)
 console.log(partnerAccount.getBalance()) // It will be 260, because parterns recieve a bonus of 10 when deposit
+
+//Challenge 6
+const newPartnerAcconut = new PartnerAccount('Parceiro da DIO', 3)
+newPartnerAcconut.deposit(200)
+newPartnerAcconut.getBalance()
+newPartnerAcconut.getName()
+newPartnerAcconut.setBalance(250)
+newPartnerAcconut.withdraw(250)
+newPartnerAcconut.validateStatus()
+newPartnerAcconut.setStatus(false)
+
+const newCompanyAccount = new CompanyAccount('Company LTD', 5)
+newCompanyAccount.deposit(250)
+newCompanyAccount.getBalance()
+newCompanyAccount.getLoan(2120)
+newCompanyAccount.getName()
+newCompanyAccount.setBalance(150)
+newCompanyAccount.setStatus(true)
+newCompanyAccount.validateStatus()
+newCompanyAccount.withdraw(250)
+
+const newPeopleAccount = new PeopleAccount(123456789101, 'People', 10)
+newPeopleAccount.deposit(250)
+newPeopleAccount.getBalance()
+newPeopleAccount.getName()
+newPeopleAccount.setBalance(150)
+newPeopleAccount.setStatus(true)
+newPeopleAccount.validateStatus()
+newPeopleAccount.withdraw(250)
